@@ -1,4 +1,7 @@
-﻿using LeetCode.Extensions;
+﻿using LeetCode._0005_LongestPalindromicSubstring_Medium;
+using LeetCode._0015_3Sum_Medium;
+using LeetCode._0016_3Sum_Closest;
+using LeetCode.Extensions;
 using LeetCode.ValidParentheses;
 using LeetCode.LongestCommonPrefix;
 using LeetCode.PalindromeNumber;
@@ -18,13 +21,16 @@ using LeetCode.LongestSubstringWithoutRepeatingCharacters;
 
 
 // 01 Two Sum
-int[] numbers = { 1, 1, 1, 1, 1, 4, 1, 1, 1, 1, 1, 7, 1, 1, 1, 1, 1 };
-var result = TwoSum.Solution(numbers, 11);
+//int[] numbers = { 1, 1, 1, 1, 1, 4, 1, 1, 1, 1, 1, 7, 1, 1, 1, 1, 1 };
+//var result = TwoSum.Solution(numbers, 11);
 
 // 03 Longst Substring without repeating characters
-//var input = "abcabcbb";
-//var result = LongestSubstringWithoutRepeatingCharacters.LongestSubstring(input);
+// var input = "abcabcbb";
+// var result = LongestSubstringWithoutRepeatingCharacters.LongestSubstring(input);
 
+// 05 Longest Palindromic Substring
+var input = "cbbd";
+var result = LongestPalindromicSubstring.LongestPalindrome(input);
 
 // 09 Palindrome Number
 //Console.WriteLine(PalindromeNumber.IsPalindrome(121));
@@ -35,6 +41,16 @@ var result = TwoSum.Solution(numbers, 11);
 // 14 Longest Common Prefix
 //var strings = new String[] { "flower", "flow", "flight" };
 //var result = LongestCommonPrefix.Solution(strings);
+
+// 15 Three Sum
+// int[] numbers = {-1,0,1,2,-1,-4};
+// var result = ThreeSum.FindCombinations(numbers);
+
+// 16 Three Sum Closest
+// int[] numbers = { -1, 2, 1, -4 };
+//int[] numbers = { 4, 0, 5, -5, 3, 3, 0, -4, -5 };
+//int target = -2;
+//var result = ThreeSumClosest.FindClosestSum(numbers, target);
 
 // 20 Valid Parentheses
 //var result = ValidParentheses.IsValid("{[()][()]}");

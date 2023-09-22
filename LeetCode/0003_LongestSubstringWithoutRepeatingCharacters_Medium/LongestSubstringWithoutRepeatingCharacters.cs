@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Reflection.Metadata.Ecma335;
+using System.Runtime.InteropServices;
 using System.Text;
 using LeetCode.Extensions;
 
@@ -8,23 +10,28 @@ public static class LongestSubstringWithoutRepeatingCharacters
 {
     public static Int32 LongestSubstring(String input)
     {
-        String tempSubstring = String.Empty;
-        Int32 longestSubstring = 0;
+        HashSet<Char> longestSubstring = new();
+        Int32 left = 0;
+        Int32 right = 0;
+        Int32 maxLength = 0;
 
-        foreach (var i in 0..(input.Count() - 1))
+        while (right < input.Length)
         {
-            if (!tempSubstring.Contains(input[i]))
+            if (!longestSubstring.Contains(input[right]))
             {
-                tempSubstring = new string(tempSubstring + input[i]);
+                longestSubstring.Add(input[right]);
+                maxLength = longestSubstring.Count > maxLength ? longestSubstring.Count: maxLength;
+                right++;
             }
             else
             {
-                if (tempSubstring.Length > longestSubstring) { longestSubstring = tempSubstring.Length; }
-                tempSubstring = input[i].ToString();
+                longestSubstring.Remove(input[left]);
+                left++;
             }
         }
+        
 
-        return longestSubstring;
+        return maxLength;
     }
 }
 
