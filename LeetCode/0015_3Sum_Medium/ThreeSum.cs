@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Immutable;
 
-namespace LeetCode._0015_3Sum_Medium;
+namespace LeetCode.ThreeSum_Medium;
 
 public static class ThreeSum
 {

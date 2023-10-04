@@ -1,4 +1,4 @@
-namespace LeetCode._0016_3Sum_Closest;
+namespace LeetCode.ThreeSum_Closest;
 
 public class ThreeSumClosest
 {

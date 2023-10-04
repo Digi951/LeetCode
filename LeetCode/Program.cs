@@ -1,6 +1,8 @@
-﻿using LeetCode._0005_LongestPalindromicSubstring_Medium;
-using LeetCode._0015_3Sum_Medium;
-using LeetCode._0016_3Sum_Closest;
+﻿using LeetCode.LongestPalindromicSubstring_Medium;
+using LeetCode.Zigzag_Conversion;
+using LeetCode.ReverseInteger_Medium;
+using LeetCode.ThreeSum_Medium;
+using LeetCode.ThreeSum_Closest;
 using LeetCode.Extensions;
 using LeetCode.ValidParentheses;
 using LeetCode.LongestCommonPrefix;
@@ -17,6 +19,7 @@ using LeetCode.ClimbingStairs;
 using LeetCode.ReverseVowelsOfAString;
 using LeetCode.LongestPalindromeByConcatenating;
 using LeetCode.LongestSubstringWithoutRepeatingCharacters;
+using LeetCode.ContainerWithMostWater_Medium;
 
 
 
@@ -29,11 +32,24 @@ using LeetCode.LongestSubstringWithoutRepeatingCharacters;
 // var result = LongestSubstringWithoutRepeatingCharacters.LongestSubstring(input);
 
 // 05 Longest Palindromic Substring
-var input = "cbbd";
-var result = LongestPalindromicSubstring.LongestPalindrome(input);
+// var input = "cbbd";
+//var result = LongestPalindromicSubstring.LongestPalindrome(input);
+
+// 06 ZigzagConversion
+// var input = "PAYPALISHIRING";
+// var result = ZigzagConversion.Convert(input, 3);
+
+// 07 Reverse Integer
+//var input = 1534236;
+//var result = ReverseInteger.Reverse(input);
 
 // 09 Palindrome Number
 //Console.WriteLine(PalindromeNumber.IsPalindrome(121));
+
+// 11 ContainerWithMostWater
+var input = new Int32[]{1, 8, 6, 2, 5, 4, 8, 3, 7};
+// var input = new Int32[]{1, 2, 1};
+var result = ContainerWithMostWater.MaxArea(input);
 
 // 13 Roman To Integer
 //RomanToInteger.RomanToInt("MCMXCIV");

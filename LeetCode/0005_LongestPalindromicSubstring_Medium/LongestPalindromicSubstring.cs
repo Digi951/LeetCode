@@ -1,6 +1,6 @@
 using System.Reflection.Metadata.Ecma335;
 
-namespace LeetCode._0005_LongestPalindromicSubstring_Medium;
+namespace LeetCode.LongestPalindromicSubstring_Medium;
 
 public static class LongestPalindromicSubstring
 {
